@@ -18,5 +18,4 @@ while f < 500:
 	else:
 		f = factors(a)*factors(b/2)-1
 
-print "number = ",(a*b)/2
-print f
+print "The Number = ",(a*b)/2," and Number of Factors=",f
