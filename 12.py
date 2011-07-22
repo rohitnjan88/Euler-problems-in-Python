@@ -1,21 +1,21 @@
 import math
-def factors(n):
-	s=0	
-	k = int(math.sqrt(n))
-	for i in range(k,0,-1):
-		if n % i == 0:
-			s = s+1
-	if n == pow(k,2):
-		return 2*s-1
+def factors(number):
+	t = 0	
+	square_root = int(math.sqrt(number))
+	for i in range(square_root,0,-1):
+		if number % i == 0:
+			t = t + 1
+	if number == pow(square_root,2):
+		return (2 * t) - 1
 	else:	
-		return 2*s
+		return 2 * t
 
-a,b,f = 1,2,3
-while f < 500:
+a,b,factor_count = 1,2,3
+while factor_count < 500:
 	a,b = a+1,b+1
 	if a%2==0:
-		f = factors(a/2)*factors(b)-1
+		factor_count = factors(a/2)*factors(b)-1
 	else:
-		f = factors(a)*factors(b/2)-1
+		factor_count = factors(a)*factors(b/2)-1
 
-print "The Number = ",(a*b)/2," and Number of Factors=",f
+print "The Number = ",(a*b)/2," and Number of Factors=",factor_count
