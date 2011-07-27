@@ -1,0 +1,4 @@
+1 . The nth triangular numbers can also be expressed as (n*(n+1))/2
+2.  Consequtive numbers can have no factors in common other than 1.
+3.  If p & q are two consecutive numbers, 
+    then factors(p*q) =  factors(p) * factors(q) -1
